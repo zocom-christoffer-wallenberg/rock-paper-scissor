@@ -36,7 +36,7 @@ document.getElementById('paper').addEventListener('click', function() {
 });
 
 //Vi lägger det i en funktion för att kunna styra när vi vill köra denna kod.
-//Vi kommer att gå igenom detta på måndag.
+//Vi kommer att gå igenom detta på tisdag.
 function getWinner() {
     computerWeapon = Math.round(Math.random() * 2); //Slumpa ett nummer mellan 0-2.
 

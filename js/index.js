@@ -8,6 +8,10 @@
 
 let userWeapon; //Här sparar vi valet som användaren gör
 let computerWeapon; //Här sparar vi datorns val
+let test = 'Christoffer';
+
+//Detta kan vi använda för skriva ut text i exempelvis en h2-tagg.
+document.getElementById('winner').innerHTML = `Hej ${test}`;
 
 
 //Det gör här är att vi hämtar knappen och kör kod när användaren klickar på knappen. Vi kommer gå igenom detta mer framöver.
@@ -46,7 +50,7 @@ function getWinner() {
 
     console.log(`Ditt vapen: ${userWeapon} Datorns vapen: ${computerWeapon}`);
 
-    //Avgör vinnare
+    //Avgör vinnare. Kollar först om det blir blivit oavgjort annars vem som vann.
     if (userWeapon == computerWeapon) {
         console.log('Det blev oavgjort');
     } else if (userWeapon == 'sten') {
